@@ -8,17 +8,20 @@ import 'aos/dist/aos.css';  // Importando o CSS do AOS
 
 const roboto = Roboto({
   variable: "--font-roboto",
-  weight: "400"
+  weight: "400",
+  subsets: ["latin"]
 })
 
 const kanit = Kanit({
   variable: "--font-kanit",
-  weight: "500"
+  weight: "500",
+  subsets: ["latin"]
 })
 
 const oswald = Oswald({
   variable: "--font-oswald",
-  weight: "700"
+  weight: "700",
+  subsets: ["latin"]
 })
 
 export const metadata: Metadata = {
