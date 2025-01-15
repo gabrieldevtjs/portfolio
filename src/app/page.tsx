@@ -106,11 +106,11 @@ export default function Home() {
           <span className="text-4xl">PROJET<span className="text-indigo-700">OS</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="text-center px-1 font-Kanit text-1xl text-stone-700 sm:px-2 lg:px-16 lg:text-1xl xl:w-1/2">
+          <p className="text-center px-1 font-Kanit text-1xl text-stone-700 sm:px-2 lg:px-16 lg:text-1xl">
           Aqui você encontrará alguns dos projetos pessoais que criei, cada projeto contendo seu próprio estudo de caso.
         </p>
 
-        <div className="flex flex-col gap-y-32 lg:flex-row lg:flex-wrap">
+        <div className="flex flex-col gap-y-32 lg:flex-row lg:flex-wrap border-2">
           <CardProject title='PROJETO 1' description="O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."/>
 
           <CardProject title='PROJETO 2' description="O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."/>
@@ -123,46 +123,44 @@ export default function Home() {
 
 
         {/*contato */}
-        <div id="contato" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 lg:px-40">
+        <div id="contato" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 lg:px-52">
           <span className="text-4xl">CONT<span className="text-indigo-700">ATO</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="px-48 pb-3 text-stone-700 text-center">
+          <p className="px-5 pb-3 text-stone-700 text-justify">
           Estou aberto a oportunidades de <span className="text-indigo-900">emprego</span> nas quais posso contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas <span className="text-indigo-900">habilidades</span> e <span className="text-indigo-900">experiência</span>, não hesite em entrar em contato comigo.
           </p>
 
-          <div className="flex flex-col xl:flex-row w-full gap-x-8">
-  <div className="xl:w-1/2 flex items-center flex-col">
-    <form action="" method="POST" className="flex flex-col gap-8 bg-gray-200 px-16 py-16">
-      <div className="flex flex-col">
-        <label htmlFor="">Name</label>
-        <input type="text" placeholder="Enter Your Name" className="bg-white p-3" />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="">Email</label>
-        <input type="text" placeholder="Enter Your Email" className="bg-white p-3" />
-      </div>
-      <div className="flex flex-col">
-        <label htmlFor="">Mensagem</label>
-        <input type="text" placeholder="Enter Your Message" className="bg-white p-3 pb-32" />
-      </div>
-      <Link href={"/contato"} className="border-2 text-white bg-indigo-700 px-8 py-2 rounded-lg lg:px-10 text-center">
-        <span className="animate-pulse lg:text-2xl xl:text-xs">ENVIAR</span>
-      </Link>
-    </form>
-  </div>
+        <div className="flex flex-col">
+          <div className="w-full flex items-center flex-col ">
+            <form action="" method="POST" className="flex flex-col gap-8  bg-gray-200 px-16 py-16">
+              <div className="flex flex-col">
+              <label htmlFor="">Name</label>
+              <input type="text" placeholder="Enter Your Name" className="bg-white p-3"/>
+              </div>
+              <div className="flex flex-col">
+              <label htmlFor="">Email</label>
+              <input type="text" placeholder="Enter Your Email" className="bg-white p-3"/>
+              </div>
+              <div className="flex flex-col">
+              <label htmlFor="">Mensagem</label>
+              <input type="text" placeholder="Enter Your Message" className="bg-white p-3 pb-32"/>
+              </div>
+              <Link href={"/contato"} className="border-2 text-white bg-indigo-700 px-8 py-2 rounded-lg lg:px-10 text-center">
+            <span className="animate-pulse lg:text-2xl">ENVIAR</span>
+           </Link>
 
-  <div className="xl:w-1/2 justify-center items-center hidden xl:flex">
-    <Image src="/icons/contact.svg" alt="LinkedIn" width={400} height={20} />
-  </div>
-</div>
+            </form>
+
+            <Image src="/icons/linkedin.png" alt="LinkedIn" width={30} height={20} />
+            </div>
              
-          
+          </div>
 
         </div>
       </section>
       
-      <Footer/>
+    <Footer/>
 
     </div>
   );
