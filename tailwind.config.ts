@@ -12,6 +12,7 @@ export default {
       roboto: ["var(--font-roboto)"],
       oswald: ["var(--font-oswald)"],
       Kanit: ["var(--font-kanit)"],
+      anton: ["var(--font-anton)"],
     },
     extend: {
       colors: {

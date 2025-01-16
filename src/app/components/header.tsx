@@ -16,30 +16,24 @@ export default function Header() {
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
-
-    const handleScroll = (id: string) => {
-        const section = document.getElementById(id);
-        if (section) {
-          section.scrollIntoView({ behavior: "smooth" });
-        }
-      };
   };
 
-    function handleScroll(arg0: string): void {
-        throw new Error("Function not implemented.");
-    }
 
   return (
-    <div className="flex flex-col w-full border-2 fixed bg-white" data-aos="fade-left">
-      <div className="w-full flex justify-between items-center lg:justify-center p-5">
-        <div className="flex gap-2 items-center lg:text-1xl lg:hidden">
+    <div className="flex flex-col w-full  fixed bg-white z-10 border-2" data-aos="fade-left">
+      <div className="w-full flex justify-between items-center p-5">
+        <div className="flex gap-2 items-center lg:text-1xl">
 
         <Image
-        src="/icons/user.svg"
+        src="/icons/set.png"
         alt="Descrição da imagem"
-        width={40}
-        height={40} 
+        width={30}
+        height={35} 
         />
+
+        <span className="rounded-lg bg-transparent text-stone-900 text-1xl">
+              JOSÉ <span className=" p-1 rounded-3xl">GA<span className="text-indigo-700">BR</span>IEL</span>
+            </span> 
         </div>
         <button onClick={toggleMenu} className="text-2xl lg:hidden">
           {isMenuOpen ? "✖" : "☰"}
@@ -47,19 +41,22 @@ export default function Header() {
 
         <div className="hidden lg:flex">
         <nav>
-            <ul className="flex gap-6 text-xs font-oswald">
+            <ul className="flex gap-6 text-xs font-oswald 2xl:text-sm 2xl:gap-10">
             <li className="">
-              <Link href={"#sobre"}>SOBRE MIM</Link>
+            <a href="#homee" className="hover:text-indigo-700">HOME</a>
             </li>
 
             <li>
-              <Link href={"/#skills"}>SKILLS</Link>
+            <a href="#sobre" className="hover:text-indigo-700">SOBRE</a>
             </li>
             <li>
-              <Link href={"/#projetos"}>PROJETOS</Link>
+            <a href="#skills" className="hover:text-indigo-700">SKILLS</a>
             </li>
             <li>
-              <Link href={"/#contato"}>CONTATO</Link>
+            <a href="#projetos" className="hover:text-indigo-700">PROJETOS</a>
+            </li>
+            <li>
+            <a href="#contato" className="hover:text-indigo-700">CONTATO</a>
             </li>
             </ul>
         </nav>

@@ -7,6 +7,8 @@ import AOS from "aos";
 import { useEffect} from "react";
 import Footer from "./components/footer";
 import CardProject from "./components/cardProject";
+import StackCard from "./components/stack.card";
+
 
 export default function Home() {
 
@@ -20,15 +22,16 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen font-Kanit">
       <Header />
-      <section className="w-full">
-        <div  id="homee" className="w-full flex flex-col justify-around items-center pt-40 pb-32 gap-10 sm:pt-52">
+      <section className="w-full pt-16 ">
+        <div className="w-full 2xl:flex  2xl:pb-20 border-2 ">
+        <div id="homee" className="w-full flex flex-col justify-around items-center pt-40 pb-32 gap-10 sm:pt-52 2xl:w-1/2 border-r-2" data-aos='fade-down'>
           <div className="text-center gap-5 flex flex-col">
-            <span className="rounded-lg bg-transparent text-stone-900 text-5xl px-6 py-1 hover:bg-indigo-700 hover:text-white hover:border-indigo-700">
+         {/*    <span className="rounded-lg bg-transparent text-stone-900 text-5xl px-6 py-1 hover:bg-indigo-700 hover:text-white hover:border-indigo-700">
               JOSÉ <span className=" p-1 rounded-3xl">GA<span className="text-fuchsia-500">BR</span>IEL</span>
-            </span>
+            </span> */}
             <div className="">
-              <h1 className="text-4xl sm:text-6xl text-indigo-700">FULL STACK</h1>
-              <h2 className="text-3xl sm:text-5xl">DEVE<span className="text-fuchsia-700">LO</span>PER</h2>
+              <h1 className="text-4xl sm:text-6xl text-indigo-700 font-ka">FULL STACK</h1>
+              <h2 className="text-3xl sm:text-5xl">DEVELOPER</h2>
             </div>
 
             <div className="w-full px-1 flex items-center justify-center">
@@ -39,7 +42,8 @@ export default function Home() {
                       width={10}
                       height={10} 
                       className="animate-bounce"
-                      /></span>
+                      />
+              </span>
             </div>
           </div>
 
@@ -80,20 +84,31 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex flex-col lg:flex-row w-full">
+        <div className="hidden 2xl:flex 2xl:w-1/2 rounded-2xl items-center justify-center flex-col" data-aos='fade-left'>
+        <Image
+            src="/icons/mesa.svg"
+            alt="Descrição da imagem"
+            width={350}
+            height={40} 
+        />
+        <span className="text-gray-500 text-sm py-5">"Programar é 100%, 90% de erro e 10% de sorte no meio!"</span>
+        </div>
+        </div>
+ 
+        <div className="flex flex-col lg:flex-row w-full 2xl:px-16 2xl:pt-32 2xl:pb-40" data-aos='fade-down'>
         {/*sobre mim */}
-        <div id="sobre" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 px-3">
+        <div id="sobre" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 px-3  rounded-2xl">
           <span className="text-4xl">SO<span className="text-indigo-700">BRE</span> MIM</span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-            <p className="text-center px-1 font-Kanit text-1xl text-stone-700 sm:px-2 lg:px-16 lg:text-1xl lg:text-justify">
-            Olá, me chamo <span className="text-indigo-900">Gabriel</span>, sou estudante de <span className="text-indigo-900">Engenharia de Software</span>, cursando o <span className="text-indigo-900">3º período</span> no <span className="text-indigo-900">Instituto de Tecnologia FUCAPI</span>. Sou apaixonado por <span className="text-indigo-900">tecnologia</span> e estou focado no <span className="text-indigo-900">desenvolvimento web</span> e <span className="text-indigo-900">back-end</span>, com ênfase em <span className="text-indigo-900">Node.js</span> e <span className="text-indigo-900">TypeScript</span>. Meu objetivo é me especializar no <span className="text-indigo-900">desenvolvimento de aplicativos Android</span>, criando soluções que impactem positivamente o dia a dia das pessoas. Estou sempre em busca de novos aprendizados, me esforçando para crescer profissionalmente e me tornar um desenvolvedor altamente qualificado.
-          </p>
+          <p className="text-center px-1 font-Kanit text-1xl sm:px-2 lg:px-16 lg:text-1xl lg:text-justify">
+          Olá, me chamo Gabriel, sou estudante de Engenharia de Software, cursando o 3º período no Instituto de Tecnologia FUCAPI. Sou apaixonado por tecnologia e estou focado no desenvolvimento web e back-end, com ênfase em Node.js e TypeScript. Meu objetivo é me especializar no desenvolvimento de aplicativos Android, criando soluções que impactem positivamente o dia a dia das pessoas. Estou sempre em busca de novos aprendizados, me esforçando para crescer profissionalmente e me tornar um desenvolvedor altamente qualificado.
+        </p>
         </div>
 
       
         {/*Skills */}
-        <div id="skills" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2">
+        <div id="skills" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2" data-aos='fade-down'>
           <span className="text-4xl font-oswald">SKIL<span className="text-indigo-700">LS</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
@@ -102,61 +117,153 @@ export default function Home() {
         </div>
 
         {/*Projetos */}
-        <div id="sobre" className="pt-16 pb-16 w-ful flex justify-center items-center flex-col gap-2 px-3">
+        <div id="projetos" className="pt-16 pb-16 w-ful flex justify-center items-center flex-col gap-2 px-3 2xl:px-32" data-aos='fade-down'>
           <span className="text-4xl">PROJET<span className="text-indigo-700">OS</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="text-center px-1 font-Kanit text-1xl text-stone-700 sm:px-2 lg:px-16 lg:text-1xl">
+          <p className="text-center px-1 font-Kanit text-1xl sm:px-2 lg:px-48 lg:text-1xl lg:pb-20 border-2 xl:px-52">
           Aqui você encontrará alguns dos projetos pessoais que criei, cada projeto contendo seu próprio estudo de caso.
         </p>
 
-        <div className="flex flex-col gap-y-32 lg:flex-row lg:flex-wrap border-2">
-          <CardProject title='PROJETO 1' description="O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."/>
+      
+        <div className="flex flex-col gap-y-32 lg:px-24 xl:px-40">
+  {/* Primeiro Card Inferior */}
+  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+    <div className="lg:w-1/2">
+      <Image 
+        src={`/icons/computador.png`} 
+        alt="DEV HOUSE" 
+        width={200} 
+        height={200} 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:h-[500px] lg:ml-20" 
+      />
+    </div>
+    <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center" data-aos='fade-down'>
+      <div className="flex flex-col items-center gap-2 px-2">
+        <span className="text-2xl xl:text-3xl">DEV H<span className="text-blue-500">OU</span>SE</span>
+        <p className="text-justify xl:text-sm text-stone-700">
+          "O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."
+        </p>
+        <StackCard stacks={['Nextjs', 'React', 'Tailwind']} />
+        <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+          Saiba Mais
+        </button>
+      </div>
+    </div>
+  </div>
 
-          <CardProject title='PROJETO 2' description="O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."/>
+  {/* Segundo Card Inferior */}
+  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+    <div className="lg:w-1/2">
+      <Image 
+        src={`/icons/computador.png`} 
+        alt="TELA LOGIN" 
+        width={200} 
+        height={200} 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:h-[500px] lg:ml-20" 
+      />
+    </div>
+    <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center" data-aos='fade-down'>
+      <div className="flex flex-col items-center gap-2 px-2">
+        <span className="text-2xl xl:text-3xl">TELA LOGIN</span>
+        <p className="text-justify xl:text-sm text-stone-700">
+          "O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."
+        </p>
+        <StackCard stacks={['Nextjs', 'React', 'Tailwind']} />
+        <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+          Saiba Mais
+        </button>
+      </div>
+    </div>
+  </div>
 
-          <CardProject title='PROJETO 3' description="O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."/>
+  {/* Terceiro Card Inferior */}
+  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+    <div className="lg:w-1/2">
+      <Image 
+        src={`/icons/api.png`} 
+        alt="ECCOMERCE API" 
+        width={140} 
+        height={140} 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:w-[220px] xl:h-[220px] xl:ml-28" 
+      />
+    </div>
+    <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center">
+      <div className="flex flex-col items-center gap-2 px-2">
+        <span className="text-2xl xl:text-3xl">ECCOMERCE API</span>
+        <p className="text-justify xl:text-sm text-stone-700">
+          "Estou me desafiando a construir uma API do zero usando apenas Express, TypeScript e Node.js. O objetivo é explorar boas práticas de desenvolvimento, como estruturação de rotas e tratamento de erros, enquanto aprofundo meu conhecimento em back-end com essas tecnologias."
+        </p>
+        <StackCard stacks={['Nodejs', 'Typescript', 'Express']} />
+        <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+          Saiba Mais
+        </button>
+      </div>
+    </div>
+  </div>
 
-          <CardProject title='PROJETO 4' description="O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."/>
+  {/* Quarto Card Inferior */}
+  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+    <div className="lg:w-1/2">
+      <Image 
+        src={`/icons/api.png`} 
+        alt="TASK LIST" 
+        width={140} 
+        height={140} 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:w-[220px] xl:h-[220px] xl:ml-28" 
+      />
+    </div>
+    <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center">
+      <div className="flex flex-col items-center gap-2 px-2">
+        <span className="text-2xl xl:text-3xl">TASK LIST</span>
+        <p className="text-justify xl:text-sm text-stone-700">
+          "O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."
+        </p>
+        <StackCard stacks={['Nestjs', 'Typescript', 'Express', 'SqLite', 'PrismaORM', 'Jwt']} />
+        <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
+          Saiba Mais
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
         </div>
-        </div>
+    
 
 
         {/*contato */}
-        <div id="contato" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 lg:px-52">
+       
+        <div className="flex flex-col lg:flex-row w-full 2xl:px-16 2xl:pt-32 2xl:pb-40" data-aos='fade-down'>
+        {/*sobre mim */}
+        <div id="contato" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 px-3  rounded-2xl">
           <span className="text-4xl">CONT<span className="text-indigo-700">ATO</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="px-5 pb-3 text-stone-700 text-justify">
-          Estou aberto a oportunidades de <span className="text-indigo-900">emprego</span> nas quais posso contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas <span className="text-indigo-900">habilidades</span> e <span className="text-indigo-900">experiência</span>, não hesite em entrar em contato comigo.
-          </p>
+          <p className="text-center px-1 font-Kanit text-1xl sm:px-2 lg:px-16 lg:text-1xl lg:text-justify">
+          Estou aberto a oportunidades de emprego nas quais posso contribuir, aprender e crescer. Se você tiver uma boa oportunidade que corresponda às minhas habilidades e experiência, não hesite em entrar em contato comigo.
+        </p>
+        <Image
+                      src="/icons/seta-para-baixo.png"
+                      alt="Descrição da imagem"
+                      width={30}
+                      height={40} 
+                      className="animate-bounce"
+              />
+              <Link href={'https://api.whatsapp.com/send?phone=5592994916643&text=Ol%C3%A1,%20vim%20pelo%20portf%C3%B3lio!'} target="_Blank"> <Image src="/icons/zap.png" alt="LinkedIn" width={30} height={20} /></Link>
+        </div>
 
-        <div className="flex flex-col">
-          <div className="w-full flex items-center flex-col ">
-            <form action="" method="POST" className="flex flex-col gap-8  bg-gray-200 px-16 py-16">
-              <div className="flex flex-col">
-              <label htmlFor="">Name</label>
-              <input type="text" placeholder="Enter Your Name" className="bg-white p-3"/>
-              </div>
-              <div className="flex flex-col">
-              <label htmlFor="">Email</label>
-              <input type="text" placeholder="Enter Your Email" className="bg-white p-3"/>
-              </div>
-              <div className="flex flex-col">
-              <label htmlFor="">Mensagem</label>
-              <input type="text" placeholder="Enter Your Message" className="bg-white p-3 pb-32"/>
-              </div>
-              <Link href={"/contato"} className="border-2 text-white bg-indigo-700 px-8 py-2 rounded-lg lg:px-10 text-center">
-            <span className="animate-pulse lg:text-2xl">ENVIAR</span>
-           </Link>
+      
+        {/*Skills */}
+        <div id="skills" className="hidden lg:flex pt-16 pb-16 w-full justify-center items-center flex-col gap-2" data-aos='fade-down'>
+        <Image
+                      src="/icons/hacker.svg"
+                      alt="Descrição da imagem"
+                      width={400}
+                      height={40} 
 
-            </form>
-
-            <Image src="/icons/linkedin.png" alt="LinkedIn" width={30} height={20} />
-            </div>
-             
-          </div>
-
+              />
+        </div>
         </div>
       </section>
       

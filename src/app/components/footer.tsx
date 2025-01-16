@@ -3,13 +3,13 @@ import Image from "next/image"
 export default function Footer(){
     return (
         <>
-        <div className="w-full flex-col  p-6 pb-36 gap-20">
+        <div className="w-full flex-col p-6 pb-36 gap-20 bg-black">
             <div>
           <div className="flex flex-col gap-2 z-10 relative">
             <h1>SOCI<span className="text-fuchsia-700">AL</span></h1>
-            <div className="flex gap-2">
-              <a href="https://github.com/gabrieldevtjs" target="_blank" rel="noopener noreferrer">
-                <Image src="/icons/github.png" alt="GitHub" width={30} height={20} />
+            <div className="flex gap-2 z-20">
+              <a href="https://github.com/gabrieldevtjs" target="_blank" rel="noopener noreferrer" className="">
+                <Image src="/icons/github.png" alt="GitHub" width={30} height={20} className="z-20" />
               </a>
               <a href="https://www.linkedin.com/in/jos%C3%A9-gabriel-8901a7344/" target="_blank" rel="noopener noreferrer">
                 <Image src="/icons/linkedin.png" alt="LinkedIn" width={30} height={20} />

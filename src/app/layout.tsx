@@ -3,6 +3,7 @@ import "./globals.css";
 import { Roboto } from "next/font/google"
 import { Oswald } from "next/font/google"
 import { Kanit } from "next/font/google"
+import { Anton } from "next/font/google"
 import 'aos/dist/aos.css';  // Importando o CSS do AOS
 
 
@@ -21,6 +22,11 @@ const kanit = Kanit({
 const oswald = Oswald({
   variable: "--font-oswald",
   weight: "700",
+  subsets: ["latin"]
+})
+const anton = Anton({
+  variable: "--font-anton",
+  weight: "400",
   subsets: ["latin"]
 })
 
