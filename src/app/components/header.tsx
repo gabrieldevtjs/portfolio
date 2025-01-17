@@ -41,7 +41,7 @@ export default function Header() {
 
         <div className="hidden lg:flex">
         <nav>
-            <ul className="flex gap-6 text-xs font-oswald 2xl:text-sm 2xl:gap-10">
+            <ul className="flex gap-6 text-gray-500 text-xs font-oswald 2xl:text-sm 2xl:gap-10">
             <li className="">
             <a href="#homee" className="hover:text-indigo-700">HOME</a>
             </li>

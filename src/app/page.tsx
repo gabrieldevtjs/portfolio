@@ -16,19 +16,13 @@ export default function Home() {
     AOS.init(); 
   }, []);
 
-  
-
-
   return (
     <div className="w-full min-h-screen font-Kanit">
       <Header />
-      <section className="w-full pt-16 ">
-        <div className="w-full 2xl:flex  2xl:pb-20 border-2 ">
-        <div id="homee" className="w-full flex flex-col justify-around items-center pt-40 pb-32 gap-10 sm:pt-52 2xl:w-1/2 border-r-2" data-aos='fade-down'>
+      <section className="w-full pt-16 2xl:px-8">
+        <div className="w-full 2xl:flex 2xl:pb-20">
+        <div id="homee" className="w-full flex flex-col justify-around items-center pt-40 pb-32 gap-10 sm:pt-52 2xl:w-1/2" data-aos='fade-down'>
           <div className="text-center gap-5 flex flex-col">
-         {/*    <span className="rounded-lg bg-transparent text-stone-900 text-5xl px-6 py-1 hover:bg-indigo-700 hover:text-white hover:border-indigo-700">
-              JOSÉ <span className=" p-1 rounded-3xl">GA<span className="text-fuchsia-500">BR</span>IEL</span>
-            </span> */}
             <div className="">
               <h1 className="text-4xl sm:text-6xl text-indigo-700 font-ka">FULL STACK</h1>
               <h2 className="text-3xl sm:text-5xl">DEVELOPER</h2>
@@ -68,7 +62,7 @@ export default function Home() {
             </a>
           </button>
 
-          <div className="flex gap-2 e">
+          <div className="flex gap-2">
             <a href="https://github.com/gabrieldevtjs" target="_blank">
               <Image src="/icons/github.png" alt="GitHub" width={30} height={20} />
             </a>
@@ -116,26 +110,27 @@ export default function Home() {
         </div>
         </div>
 
-        {/*Projetos */}
+        {/*Projetos */} 
         <div id="projetos" className="pt-16 pb-16 w-ful flex justify-center items-center flex-col gap-2 px-3 2xl:px-32" data-aos='fade-down'>
           <span className="text-4xl">PROJET<span className="text-indigo-700">OS</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="text-center px-1 font-Kanit text-1xl sm:px-2 lg:px-48 lg:text-1xl lg:pb-20 border-2 xl:px-52">
+          <p className="text-center w-auto px-1 font-Kanit text-1xl sm:px-32 lg:text-1xl lg:pb-20 lg:px-60 xl:px-96">
           Aqui você encontrará alguns dos projetos pessoais que criei, cada projeto contendo seu próprio estudo de caso.
         </p>
 
+
       
-        <div className="flex flex-col gap-y-32 lg:px-24 xl:px-40">
+        <div className="flex flex-col pt-20 gap-y-32 lg:px-24 xl:px-40">
   {/* Primeiro Card Inferior */}
-  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+  <div className="flex flex-col items-center w-full p-2 lg:flex-row  md:px-24 lg:px-0" data-aos='fade-down'>
     <div className="lg:w-1/2">
       <Image 
-        src={`/icons/computador.png`} 
+        src={`/icons/image-dev-house.png`} 
         alt="DEV HOUSE" 
-        width={200} 
+        width={370} 
         height={200} 
-        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:h-[500px] lg:ml-20" 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] lg:ml-20 xl:w-[500px] xl:h-[500px] xl:ml-14  2xl:w-[900px] 2xl:h-[500px] 2xl:ml-4" 
       />
     </div>
     <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center" data-aos='fade-down'>
@@ -146,46 +141,48 @@ export default function Home() {
         </p>
         <StackCard stacks={['Nextjs', 'React', 'Tailwind']} />
         <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-          Saiba Mais
+        <a href="https://dev-house-gilt.vercel.app/" target="_blank">Saiba Mais</a>
         </button>
       </div>
     </div>
   </div>
 
-  {/* Segundo Card Inferior */}
-  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+    {/* Segundo Card Inferior */}
+  <div className="flex flex-col items-center w-full p-2 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
     <div className="lg:w-1/2">
       <Image 
-        src={`/icons/computador.png`} 
-        alt="TELA LOGIN" 
-        width={200} 
+        src={`/icons/image-dev-house.png`} 
+        alt="DEV HOUSE" 
+        width={370} 
         height={200} 
-        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:h-[500px] lg:ml-20" 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] lg:ml-20 xl:w-[500px] xl:h-[500px] xl:ml-14  2xl:w-[10000px] 2xl:h-[600px] 2xl:ml-4" 
       />
     </div>
     <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center" data-aos='fade-down'>
       <div className="flex flex-col items-center gap-2 px-2">
-        <span className="text-2xl xl:text-3xl">TELA LOGIN</span>
+        <span className="text-2xl xl:text-3xl">DEV H<span className="text-blue-500">OU</span>SE</span>
         <p className="text-justify xl:text-sm text-stone-700">
           "O TaskMaster é uma aplicação web criada para simplificar a organização de tarefas e aumentar a produtividade de equipes e indivíduos. Com uma interface intuitiva e responsiva, o sistema permite que usuários criem, editem e organizem tarefas de forma eficiente, priorizando as mais importantes e garantindo que nenhum prazo seja perdido."
         </p>
         <StackCard stacks={['Nextjs', 'React', 'Tailwind']} />
         <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-          Saiba Mais
+        <a href="https://dev-house-gilt.vercel.app/" target="_blank">Saiba Mais</a>
         </button>
       </div>
     </div>
   </div>
 
+
+
   {/* Terceiro Card Inferior */}
-  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+  <div className="flex flex-col items-center w-full p-2 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
     <div className="lg:w-1/2">
       <Image 
         src={`/icons/api.png`} 
         alt="ECCOMERCE API" 
         width={140} 
         height={140} 
-        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:w-[220px] xl:h-[220px] xl:ml-28" 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:w-[200px] xl:h-[200px] xl:ml-52" 
       />
     </div>
     <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center">
@@ -196,21 +193,21 @@ export default function Home() {
         </p>
         <StackCard stacks={['Nodejs', 'Typescript', 'Express']} />
         <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-          Saiba Mais
+        <a href="https://github.com/gabrieldevtjs/eccommerce-api" target="_blank">Saiba Mais</a>
         </button>
       </div>
     </div>
   </div>
 
   {/* Quarto Card Inferior */}
-  <div className="flex flex-col items-center w-full p-4 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
+  <div className="flex flex-col items-center w-full p-2 lg:flex-row gap-8 md:px-24 lg:px-0" data-aos='fade-down'>
     <div className="lg:w-1/2">
       <Image 
         src={`/icons/api.png`} 
         alt="TASK LIST" 
         width={140} 
         height={140} 
-        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:w-[220px] xl:h-[220px] xl:ml-28" 
+        className="md:h-[140px] md:w-[140px] lg:w-[190px] lg:h-[190px] xl:w-[200px] xl:h-[200px] xl:ml-52" 
       />
     </div>
     <div className="lg:w-1/2 flex-col lg:items-center lg:justify-center">
@@ -221,16 +218,13 @@ export default function Home() {
         </p>
         <StackCard stacks={['Nestjs', 'Typescript', 'Express', 'SqLite', 'PrismaORM', 'Jwt']} />
         <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
-          Saiba Mais
+        <a href="https://github.com/gabrieldevtjs/task-list" target="_blank">SAIBA MAIS</a>   
         </button>
       </div>
     </div>
   </div>
 </div>
-
-        </div>
-    
-
+</div>
 
         {/*contato */}
        
@@ -261,8 +255,7 @@ export default function Home() {
                       alt="Descrição da imagem"
                       width={400}
                       height={40} 
-
-              />
+        />
         </div>
         </div>
       </section>
