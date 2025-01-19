@@ -12,14 +12,15 @@ export default function SkillCard() {
         "PostgreSQL",
         "SQL",
         "Prisma",
+        "Git",
         "Firebase (NoSQL)",
+        "GitHub",
         "Testes E2E",
         "Testes funcionais",
         "Testes de aceitação",
-        "Testes exploratórios",
-        "Git",
-        "GitHub",
         "Scrum",
+        "Testes exploratórios",
+       
         "Kanban"
       ];
     

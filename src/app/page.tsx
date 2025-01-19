@@ -19,7 +19,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen">
       <Header />
-      <section className="w-full pt-16 2xl:px-8 font-Kanit">
+      <section className="w-full pt-10 2xl:px-8 font-Kanit">
         <div className="w-full 2xl:flex 2xl:pb-20 rounded-3xl">
         <div id="homee" className="w-full flex flex-col justify-around items-center pt-40 pb-32 gap-10 sm:pt-52 2xl:w-1/2" data-aos='fade-down'>
           <div className="text-center gap-5 flex flex-col ">
@@ -44,7 +44,7 @@ export default function Home() {
           </div>
           </div>
 
-          <p className="text-center px-1  text-1xl text-stone-700 sm:px-2 lg:px-16">
+          <p className="text-center px-1  text-1xl text-stone-800 sm:px-2 lg:px-16">
             Olá, me chamo Gabriel, sou desenvolvedor Full Stack e apresento meu portfólio com alguns projetos que criei, mostrando as soluções que desenvolvi e as tecnologias que utilizei. Cada projeto é uma oportunidade de aprender e crescer, e aqui você pode ver um pouco do que andei criando.
           </p>
 
@@ -194,7 +194,7 @@ export default function Home() {
     <div className="flex flex-col items-center gap-2 px-2">
       <span className="text-2xl xl:text-3xl">E-COMMERCE <span className="text-blue-500">API</span></span>
       <p className="text-justify xl:text-sm text-stone-700">
-      Atualemente estou me desafiando a criar uma API de E-Commerce do zero usando Express, Node.js e TypeScript. Esse projeto é uma chance de aprender mais sobre conceitos avançados, aplicar boas práticas e melhorar minhas habilidades em arquitetura, segurança e desempenho. O objetivo é construir uma solução robusta, escalável e eficiente, consolidando meu aprendizado e me tornando um desenvolvedor mais completo.
+      Atualmente estou me desafiando a criar uma API de E-Commerce do zero usando Express, Node.js e TypeScript. Esse projeto é uma chance de aprender mais sobre conceitos avançados, aplicar boas práticas e melhorar minhas habilidades em arquitetura, segurança e desempenho. O objetivo é construir uma solução robusta, escalável e eficiente, consolidando meu aprendizado e me tornando um desenvolvedor mais completo.
       </p>
       <span className="text-sm text-stone-900 ">(Em Desenvolvimento)</span>
       <StackCard stacks={['Nodejs', 'Express', 'Typescript', 'Firebase']} />
