@@ -25,7 +25,7 @@ export default function Home() {
           <div className="text-center gap-5 flex flex-col ">
             <div className="">
               <h1 className="text-5xl sm:text-6xl">FULL <span className="text-indigo-700">STA</span>CK</h1>
-              <h2 className="text-4xl sm:text-5xl"><span className="text-indigo-700">D</span>EVEL<span className="text-indigo-700">O</span>PER</h2>
+              <h2 className="text-4xl sm:text-5xl"><span className="text-indigo-700">D</span>EVELOPE<span className="text-indigo-700">R</span></h2>
             </div>
 
             <div className="flex gap-2 items-center justify-center">
