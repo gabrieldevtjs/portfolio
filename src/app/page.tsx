@@ -25,7 +25,7 @@ export default function Home() {
           <div className="text-center gap-5 flex flex-col ">
             <div className="">
               <h1 className="text-5xl sm:text-6xl">FULL <span className="text-indigo-700">STA</span>CK</h1>
-              <h2 className="text-4xl sm:text-5xl"><span className="text-indigo-700">D</span>EVELOPE<span className="text-indigo-700">R</span></h2>
+              <h2 className="text-4xl sm:text-5xl"><span className="text-indigo-700">D</span>EVEL<span className="text-indigo-700">O</span>PER</h2>
             </div>
 
             <div className="flex gap-2 items-center justify-center">
@@ -87,7 +87,7 @@ export default function Home() {
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
           <p className="text-justify  text-stone-900 px-1 text-1xl sm:px-2 lg:px-16 lg:text-1xl ">
-          Olá, me chamo Gabriel, sou estudante de Engenharia de Software, cursando o 3º período no Instituto de Tecnologia FUCAPI. Sou apaixonado por tecnologia e estou focado no desenvolvimento web e back-end, com ênfase em Node.js e TypeScript. Meu objetivo é me especializar no desenvolvimento de aplicativos mobile, criando soluções que impactem positivamente o dia a dia das pessoas. Estou sempre em busca de novos aprendizados, me esforçando para crescer profissionalmente e me tornar um desenvolvedor altamente qualificado.
+          Olá, me chamo Gabriel, sou natural do Amazonas e estou cursando o 3º período de Engenharia de Software no Instituto de Tecnologia FUCAPI. Sou apaixonado por tecnologia e estou focado no desenvolvimento web e back-end, com ênfase em Node.js e TypeScript. Meu objetivo é me especializar no desenvolvimento de aplicativos mobile, criando soluções que impactem positivamente o dia a dia das pessoas. Estou sempre em busca de novos aprendizados, me esforçando para crescer profissionalmente e me tornar um desenvolvedor altamente qualificado.
         </p>
         </div>
 
