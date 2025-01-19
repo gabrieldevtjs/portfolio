@@ -4,6 +4,8 @@ import { Roboto } from "next/font/google"
 import { Oswald } from "next/font/google"
 import { Kanit } from "next/font/google"
 import { Anton } from "next/font/google"
+import { Bebas_Neue } from "next/font/google";
+import { Teko } from "next/font/google";
 import 'aos/dist/aos.css';  // Importando o CSS do AOS
 
 
@@ -29,6 +31,16 @@ const anton = Anton({
   weight: "400",
   subsets: ["latin"]
 })
+const bebas = Bebas_Neue({
+  variable: "--font-bebas",
+  weight: "400",
+  subsets: ["latin"]
+})
+const teko = Teko({
+  variable: "--font-teko",
+  weight: "400",
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: "Portfólio",
@@ -43,7 +55,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${roboto.variable}, ${oswald.variable}, ${kanit.variable}`}>
+    <html lang="en" className={`${roboto.variable} ${oswald.variable} ${kanit.variable} ${anton.variable} ${bebas.variable} ${teko.variable}`}>
       <body>
         {children}
       </body>

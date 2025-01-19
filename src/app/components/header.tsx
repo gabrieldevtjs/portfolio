@@ -20,9 +20,9 @@ export default function Header() {
 
 
   return (
-    <div className="flex flex-col w-full  fixed bg-white z-10 border-2" data-aos="fade-left">
+    <div className="flex flex-col w-full  fixed bg-white z-10 border-2 font-Kanit">
       <div className="w-full flex justify-between items-center p-5">
-        <div className="flex gap-2 items-center lg:text-1xl">
+        <div className="flex gap-2 items-center lg:text-1xl" data-aos="fade-right">
 
         <Image
         src="/icons/set.png"
@@ -35,13 +35,13 @@ export default function Header() {
               JOSÉ <span className=" p-1 rounded-3xl">GA<span className="text-indigo-700">BR</span>IEL</span>
             </span> 
         </div>
-        <button onClick={toggleMenu} className="text-2xl lg:hidden">
+        <button onClick={toggleMenu} className="text-2xl lg:hidden" data-aos="fade-left">
           {isMenuOpen ? "✖" : "☰"}
         </button>
 
         <div className="hidden lg:flex">
         <nav>
-            <ul className="flex gap-6 text-gray-500 text-xs font-oswald 2xl:text-sm 2xl:gap-10">
+            <ul className="flex gap-6 text-gray-500 text-xs  2xl:text-sm 2xl:gap-10">
             <li className="">
             <a href="#homee" className="hover:text-indigo-700">HOME</a>
             </li>
@@ -61,7 +61,7 @@ export default function Header() {
       </div>
       </div>
 
-      <div className={`${isMenuOpen ? "flex" : "hidden"} p-4 w-full border bg-gray-100`}
+      <div className={`${isMenuOpen ? "flex" : "hidden"} p-4 w-full border bg-stone-100`}
       >
         <nav className="w-full flex flex-col items-center">
           <ul className="flex flex-col items-center">

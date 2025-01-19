@@ -2,10 +2,10 @@ import Image from "next/image";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-950 px-6 text-white pt-12">
+    <footer className="w-full bg-gray-950 px-6 text-white pt-12 font-Kanit">
       <div className="flex flex-col gap-12 border-b-2 pb-6 border-gray-600">
         <div className="flex flex-col gap-2">
-          <h1 className="font-bold">SOCIAL</h1>
+          <h1>SOCIAL</h1>
           <div className="flex gap-2">
             <a href="https://api.whatsapp.com/send?phone=5592994916643&text=Ol%C3%A1,%20vim%20pelo%20portf%C3%B3lio!" target="_blank">
               <Image
@@ -50,7 +50,7 @@ export default function Footer() {
         </div>
   
       <div className="flex flex-col gap-6">
-        <h1 className="font-bold">JOSÉ GABRIEL</h1>
+        <h1>JOSÉ GABRIEL</h1>
 
         <p className="text-xs text-gray-400">Desenvolvedor Full Stack apaixonado por criar soluções completas para web, integrando front-end e back-end para construir aplicações robustas e funcionais.</p>
       </div>

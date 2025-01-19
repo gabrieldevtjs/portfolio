@@ -17,15 +17,15 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="w-full min-h-screen font-Kanit">
+    <div className="w-full min-h-screen">
       <Header />
-      <section className="w-full pt-16 2xl:px-8">
+      <section className="w-full pt-16 2xl:px-8 font-Kanit">
         <div className="w-full 2xl:flex 2xl:pb-20 rounded-3xl">
         <div id="homee" className="w-full flex flex-col justify-around items-center pt-40 pb-32 gap-10 sm:pt-52 2xl:w-1/2" data-aos='fade-down'>
-          <div className="text-center gap-5 flex flex-col">
+          <div className="text-center gap-5 flex flex-col ">
             <div className="">
               <h1 className="text-5xl sm:text-6xl">FULL <span className="text-indigo-700">STA</span>CK</h1>
-              <h2 className="text-4xl sm:text-5xl"><span className="text-indigo-700">D</span>EVELOPER</h2>
+              <h2 className="text-4xl sm:text-5xl"><span className="text-indigo-700">D</span>EVEL<span className="text-indigo-700">O</span>PER</h2>
             </div>
 
             <div className="flex gap-2 items-center justify-center">
@@ -44,10 +44,8 @@ export default function Home() {
           </div>
           </div>
 
-          <p className="text-center px-1 font-Kanit text-1xl text-stone-700 sm:px-2 lg:px-16">
-            Olá, me chamo Gabriel, sou desenvolvedor Full Stack. Trabalho com soluções web que realmente
-            funcionam e melhoram a experiência dos usuários. Estou sempre aprendendo novas tecnologias para
-            entregar projetos legais e eficientes.
+          <p className="text-center px-1  text-1xl text-stone-700 sm:px-2 lg:px-16">
+            Olá, me chamo Gabriel, sou desenvolvedor Full Stack e apresento meu portfólio com alguns projetos que criei, mostrando as soluções que desenvolvi e as tecnologias que utilizei. Cada projeto é uma oportunidade de aprender e crescer, e aqui você pode ver um pouco do que andei criando.
           </p>
 
         <div className="flex flex-col justify-center items-center gap-6">
@@ -59,8 +57,8 @@ export default function Home() {
                       className="animate-bounce"
               />
 
-          <button className="border-2 text-white bg-indigo-700 px-8 py-2 rounded-lg font-oswald">
-            <a href="/curriculo/cv.pdf" download className="text-white animate-pulse font-Kanit">
+          <button className="border-2 text-white bg-indigo-700 px-8 py-2 rounded-lg">
+            <a href="/curriculo/cv.pdf" download className="text-white animate-pulse ">
               DOWNLOAD CV
             </a>
           </button>
@@ -78,18 +76,17 @@ export default function Home() {
             height={40} 
         />
         
-        <span className="text-gray-200 text-sm py-5">"Programar é 100%, 90% de erro e 10% de sorte no meio!"</span>
         </div>
         </div>
         </div>
  
-        <div className="flex flex-col px-6 lg:flex-row w-full 2xl:px-16 2xl:pt-32 2xl:pb-40 bg-cover bg-center" data-aos='fade-down'>
+        <div className="flex flex-col px-4 lg:flex-row w-full 2xl:px-16 2xl:pt-32 2xl:pb-40 bg-cover bg-center" data-aos='fade-down'>
         {/*sobre mim */}
         <div id="sobre" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 px-3 ">
           <span className="text-4xl">SO<span className="text-indigo-700">BRE</span> MIM</span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="text-justify px-1 text-1xl sm:px-2 lg:px-16 lg:text-1xl">
+          <p className="text-justify  text-stone-900 px-1 text-1xl sm:px-2 lg:px-16 lg:text-1xl ">
           Olá, me chamo Gabriel, sou estudante de Engenharia de Software, cursando o 3º período no Instituto de Tecnologia FUCAPI. Sou apaixonado por tecnologia e estou focado no desenvolvimento web e back-end, com ênfase em Node.js e TypeScript. Meu objetivo é me especializar no desenvolvimento de aplicativos mobile, criando soluções que impactem positivamente o dia a dia das pessoas. Estou sempre em busca de novos aprendizados, me esforçando para crescer profissionalmente e me tornar um desenvolvedor altamente qualificado.
         </p>
         </div>
@@ -97,7 +94,7 @@ export default function Home() {
       
         {/*Skills */}
         <div id="skills" className="pt-16 pb-16 w-full flex justify-center items-center flex-col gap-2 " data-aos='fade-down'>
-          <span className="text-4xl font-oswald">SKIL<span className="text-indigo-700">LS</span></span>
+          <span className="text-4xl">SKIL<span className="text-indigo-700">LS</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
           <SkillCard />
@@ -109,7 +106,7 @@ export default function Home() {
           <span className="text-4xl">PROJET<span className="text-indigo-700">OS</span></span>
           <span className="border-t-4 border-indigo-700 animate-move-left-right">{"\u00A0".repeat(15)}</span>
 
-          <p className="text-center w-auto px-1 font-Kanit text-1xl pb-8 sm:px-32 lg:text-1xl lg:px-60 xl:px-96">
+          <p className="text-center w-auto px-1  text-1xl pb-8 sm:px-32 lg:text-1xl lg:px-60 xl:px-96">
           Aqui você encontrará alguns dos projetos pessoais que criei, cada projeto contendo seu próprio estudo de caso.
         </p>
 
@@ -169,7 +166,7 @@ export default function Home() {
     <div className="flex flex-col items-center gap-2 px-2">
       <span className="text-2xl xl:text-3xl">TELA DE LO<span className="text-blue-500">GIN</span></span>
       <p className="text-justify xl:text-sm text-stone-700">
-      Tela de login feita com React e Tailwind CSS, sem funcionalidades, apenas para exibição. Contém campos de usuário e senha, além de um botão de login, com foco na responsividade e layout simples."
+      Tela de login feita com React e Tailwind CSS, sem funcionalidades, apenas para exibição. Contém campos de usuário e senha, além de um botão de login, com foco na responsividade e layout simples.
       </p>
       <StackCard stacks={['Nextjs', 'React', 'Tailwind']} />
       <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
@@ -199,7 +196,7 @@ export default function Home() {
       <p className="text-justify xl:text-sm text-stone-700">
       Atualemente estou me desafiando a criar uma API de E-Commerce do zero usando Express, Node.js e TypeScript. Esse projeto é uma chance de aprender mais sobre conceitos avançados, aplicar boas práticas e melhorar minhas habilidades em arquitetura, segurança e desempenho. O objetivo é construir uma solução robusta, escalável e eficiente, consolidando meu aprendizado e me tornando um desenvolvedor mais completo.
       </p>
-      <span className="text-sm text-stone-900 font-bold">(Em Desenvolvimennto)</span>
+      <span className="text-sm text-stone-900 ">(Em Desenvolvimento)</span>
       <StackCard stacks={['Nodejs', 'Express', 'Typescript', 'Firebase']} />
       <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
         <a href="https://github.com/gabrieldevtjs/eccommerce-api" target="_blank">VIEW GITHUB</a>
@@ -229,7 +226,7 @@ export default function Home() {
      
 Estou desenvolvendo uma API de lista de tarefas com NestJS, PostgreSQL e TypeScript, pensando em consumir futuramente com o front-end. O NestJS mantém o código organizado, o PostgreSQL gerencia o banco de dados e o TypeScript traz mais segurança ao projeto. A ideia é criar uma solução escalável e pronta para crescer, com o objetivo de integrar com o front-end no futuro.
       </p>
-      <span className="text-sm text-stone-900 font-bold">(Em Desenvolvimento)</span>
+      <span className="text-sm text-stone-900 ">(Em Desenvolvimento)</span>
       <StackCard stacks={['Nestjs', 'Typescript', 'PostgreSQL', 'PrismaORM', 'E2E']} />
       <button className="mt-4 px-6 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600">
         <a href="https://github.com/gabrieldevtjs/task-list" target="_blank">VIEW GITHUB</a>

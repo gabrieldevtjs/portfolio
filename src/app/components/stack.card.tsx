@@ -4,7 +4,7 @@ export default function StackCard({ stacks }: { stacks: string[] }) {
         {stacks.map((stack, index) => (
           <span
             key={index}
-            className="rounded-lg text-gray-700  border-2 border-black 0 px-3 py-1 hover:bg-indigo-700 hover:text-white hover:border-indigo-700"
+            className="rounded-lg text-gray-700  border-2 border-black 0 px-3 py-1 hover:bg-indigo-700 hover:text-white hover:border-indigo-700 font-Kanit"
           >
             {stack}
           </span>

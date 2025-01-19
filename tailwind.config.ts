@@ -13,6 +13,9 @@ export default {
       oswald: ["var(--font-oswald)"],
       Kanit: ["var(--font-kanit)"],
       anton: ["var(--font-anton)"],
+      babel: ["var(--font-bebas)"],
+      teko: ["var(--font-teko)"]
+
     },
     extend: {
       colors: {
@@ -35,3 +38,4 @@ export default {
   },
   plugins: [],
 };
+
