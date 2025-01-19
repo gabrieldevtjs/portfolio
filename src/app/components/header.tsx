@@ -55,9 +55,7 @@ export default function Header() {
             <li>
             <a href="#projetos" className="hover:text-indigo-700">PROJETOS</a>
             </li>
-            <li>
-            <a href="#contato" className="hover:text-indigo-700">CONTATO</a>
-            </li>
+            
             </ul>
         </nav>
       </div>
@@ -79,9 +77,7 @@ export default function Header() {
             <li className="border-b-4 border-indigo-500 w-max p-3">
             <a href="#projetos" className="hover:text-indigo-700">PROJETOS</a>
             </li>
-            <li className="border-b-4 border-indigo-500 w-max p-3">
-            <a href="#contato" className="hover:text-indigo-700">CONTATO</a>
-            </li>
+            
           </ul>
         </nav>
       </div>
